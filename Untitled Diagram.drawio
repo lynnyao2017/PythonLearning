@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-29T23:15:45.086Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36" etag="2bMhaUVe-46_Bgzicpvo" version="17.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-29T23:24:27.732Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36" etag="tQc35hovTI23Ho5XhYgq" version="17.2.4" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="782" dy="379" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -265,23 +265,29 @@
             <mxPoint x="530" y="2630" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="P4FuP0LSuR6LacXq8Uvd-95" value="uf184_load_rpt_avg_vsan_disk_metrics" style="swimlane;startSize=20;horizontal=1;containerType=tree;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="580" y="2930" width="350" height="240" as="geometry" />
+        <mxCell id="P4FuP0LSuR6LacXq8Uvd-95" value="uf200_rpt_avg_hourly_metrics" style="swimlane;startSize=20;horizontal=1;containerType=tree;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="522.51" y="2920" width="465" height="340" as="geometry" />
         </mxCell>
-        <mxCell id="P4FuP0LSuR6LacXq8Uvd-96" value="ucc_vcenter.rpt_avg_vsan_disk_metrics" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="P4FuP0LSuR6LacXq8Uvd-95">
-          <mxGeometry x="70" y="40" width="240" height="50" as="geometry" />
+        <mxCell id="P4FuP0LSuR6LacXq8Uvd-96" value="ucc_vcenter.ucc_vcenter.rpt_avg_hourly_metrics" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="P4FuP0LSuR6LacXq8Uvd-95">
+          <mxGeometry x="40" y="40" width="270" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="P4FuP0LSuR6LacXq8Uvd-97" value="ucc_vcenter.rpt_daily_vsan_disk_metrics" style="swimlane;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="P4FuP0LSuR6LacXq8Uvd-95">
-          <mxGeometry x="30" y="120" width="275" height="90" as="geometry" />
+        <mxCell id="P4FuP0LSuR6LacXq8Uvd-97" value="ucc_vcenter.rpt_host_metrics" style="swimlane;fillColor=#d5e8d4;strokeColor=#82b366;startSize=23;" vertex="1" parent="P4FuP0LSuR6LacXq8Uvd-95">
+          <mxGeometry x="17.5" y="120" width="340" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="P4FuP0LSuR6LacXq8Uvd-98" value="&lt;div&gt;avg(total_capacity_gib) as total_capacity_gib,&lt;/div&gt;&lt;div&gt;avg(used_capacity_gib)&lt;span&gt;	&lt;/span&gt; as used_capacity_gib&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="P4FuP0LSuR6LacXq8Uvd-97">
-          <mxGeometry y="40" width="260" height="30" as="geometry" />
+        <mxCell id="P4FuP0LSuR6LacXq8Uvd-98" value="&lt;div&gt;,rhm.sample_date&lt;/div&gt;&lt;div&gt;&lt;span&gt;			&lt;/span&gt;,rhm.sample_hour&lt;/div&gt;&lt;div&gt;&lt;span&gt;			&lt;/span&gt;,avg(rhm.cpu_total_mhz)&amp;nbsp; &amp;nbsp;as avg_cpu_total_mhz&lt;/div&gt;&lt;div&gt;&lt;span&gt;			&lt;/span&gt;,avg(rhm.memory_total_mb) as avg_memory_total_mb&lt;/div&gt;&lt;div&gt;&lt;span&gt;			&lt;/span&gt;,avg(rhm.stg_total_gib)&amp;nbsp; &amp;nbsp;as avg_storage_total_gib&lt;/div&gt;&lt;div&gt;&lt;span&gt;			&lt;/span&gt;--&lt;/div&gt;&lt;div&gt;&lt;span&gt;			&lt;/span&gt;,avg(rhm.cpu_usage_mhz) as avg_cpu_usage_mhz&lt;/div&gt;&lt;div&gt;&lt;span&gt;			&lt;/span&gt;,avg(rhm.mem_consumed_mb) as avg_mem_consumed_mb&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span&gt;			&lt;/span&gt;,avg(rhm.stg_used_gib) as avg_stg_used_gib&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span&gt;			&lt;/span&gt;,rhm.compute_class&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="P4FuP0LSuR6LacXq8Uvd-97">
+          <mxGeometry x="5" y="30" width="340" height="150" as="geometry" />
         </mxCell>
         <mxCell id="P4FuP0LSuR6LacXq8Uvd-99" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.584;exitY=0.011;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="P4FuP0LSuR6LacXq8Uvd-95" source="P4FuP0LSuR6LacXq8Uvd-97" target="P4FuP0LSuR6LacXq8Uvd-96">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="175" y="120" as="sourcePoint" />
             <mxPoint x="210" y="150" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="P4FuP0LSuR6LacXq8Uvd-101" value="Clean out previous records for the given billing period" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="P4FuP0LSuR6LacXq8Uvd-95">
+          <mxGeometry x="350" y="40" width="100" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="P4FuP0LSuR6LacXq8Uvd-102" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="P4FuP0LSuR6LacXq8Uvd-95" source="P4FuP0LSuR6LacXq8Uvd-96" target="P4FuP0LSuR6LacXq8Uvd-101">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="P4FuP0LSuR6LacXq8Uvd-100" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="P4FuP0LSuR6LacXq8Uvd-86" target="P4FuP0LSuR6LacXq8Uvd-95">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
