@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-31T14:15:06.402Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="DdzJIG-ZKj2ccE1xIJbX" version="17.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-31T14:17:15.887Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="wF8taIG1zHTEUG-W_teq" version="17.2.5" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="782" dy="436" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -450,6 +450,18 @@
         </mxCell>
         <mxCell id="qHnehCnUd78I_HZsjJGI-43" value="&lt;div&gt;rsc.rate_schedule_criteria_id,&lt;/div&gt;&lt;div&gt;&lt;span&gt;		&lt;/span&gt;&amp;nbsp; &amp;nbsp; rsc.rate_schedule_id,&amp;nbsp; -- the id that defines the set&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; rsc.feature_id,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; rsc.feature_value&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; from ucc_contract.rate_schedule_criteria rsc&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; join ucc_contract.rate_schedules rs&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontColor=#00000F;" vertex="1" parent="1">
           <mxGeometry x="550" y="4930" width="460" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="qHnehCnUd78I_HZsjJGI-44" value="metering_utility.load_rps_rc_candidates" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
+          <mxGeometry x="216.26" y="5090" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHnehCnUd78I_HZsjJGI-45" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#00000F;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.479;entryY=-0.222;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qHnehCnUd78I_HZsjJGI-41" target="qHnehCnUd78I_HZsjJGI-44">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="5060" as="sourcePoint" />
+            <mxPoint x="365" y="5040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qHnehCnUd78I_HZsjJGI-46" value="&lt;div&gt;Returns the rate parameters and rate criteria that match structure, have the same&lt;/div&gt;&lt;div&gt;--&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; resource categories and are attached to the same product agreements&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontColor=#00000F;" vertex="1" parent="1">
+          <mxGeometry x="550" y="5040" width="290" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
