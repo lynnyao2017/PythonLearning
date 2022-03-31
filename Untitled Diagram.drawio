@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-31T13:35:44.921Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="BhAVAKa3_BWeFH1mPEag" version="17.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-31T13:47:52.219Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="rQ-wrm2OcUW2fX11ZF0N" version="17.2.5" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="782" dy="436" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -372,6 +372,33 @@
         </mxCell>
         <mxCell id="qHnehCnUd78I_HZsjJGI-19" value="create temporary table tmp_consumption_metrics_r" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
           <mxGeometry x="540" y="4015" width="267" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="qHnehCnUd78I_HZsjJGI-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.477;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="qHnehCnUd78I_HZsjJGI-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="4150" as="sourcePoint" />
+            <mxPoint x="358" y="4150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qHnehCnUd78I_HZsjJGI-23" value="&lt;div&gt;Returns all asset product agreements that are in play for the specified cbp and for&lt;/div&gt;&lt;div&gt;--&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; which there is a corresponding CM (consumption metrics) record, along with the row_num&lt;/div&gt;&lt;div&gt;--&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; of that matching record&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="575" y="4210" width="290" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qHnehCnUd78I_HZsjJGI-24" value="load_metrics_cpa" style="swimlane;startSize=20;horizontal=1;containerType=tree;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="180" y="4150" width="462" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="qHnehCnUd78I_HZsjJGI-26" value="ucc_contract.client_product_agreements" style="swimlane;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="qHnehCnUd78I_HZsjJGI-24">
+          <mxGeometry x="10" y="120" width="424.38" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="qHnehCnUd78I_HZsjJGI-27" value="&lt;div&gt;arm.standard_capacity_metric_id,&lt;/div&gt;&lt;div&gt;&lt;span&gt;		&lt;/span&gt;scm.capacity_metric,&lt;/div&gt;&lt;div&gt;&lt;span&gt;		&lt;/span&gt;coalesce(rc.event_type_name, &#39;na&#39;) as resource_category,&lt;/div&gt;&lt;div&gt;&lt;span&gt;		&lt;/span&gt;cpa.product_agreement_id,&lt;/div&gt;&lt;div&gt;&lt;span&gt;		&lt;/span&gt;apa.asset_product_agreement_id,&lt;/div&gt;&lt;div&gt;&lt;span&gt;		&lt;/span&gt;ag.agreement_id&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&amp;nbsp; from ucc_contract.&lt;font color=&quot;#0000cc&quot;&gt;client_product_agreements &lt;/font&gt;cpa&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; join ucc_contract.agreements ag&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;...&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp;left join ucc_contract.asset_resource_metrics arm&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&amp;nbsp; &amp;nbsp; on arm.asset_product_agreement_id = apa.asset_product_agreement_id&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="qHnehCnUd78I_HZsjJGI-26">
+          <mxGeometry x="4.379999999999999" y="30" width="420" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="qHnehCnUd78I_HZsjJGI-29" value="metering_utility.get_product_agreement_by_cbp" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="qHnehCnUd78I_HZsjJGI-24">
+          <mxGeometry x="22" y="50" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHnehCnUd78I_HZsjJGI-30" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#0000CC;exitX=0.471;exitY=1.044;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="qHnehCnUd78I_HZsjJGI-24" source="qHnehCnUd78I_HZsjJGI-29" target="qHnehCnUd78I_HZsjJGI-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="72" y="340" as="sourcePoint" />
+            <mxPoint x="122" y="290" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
