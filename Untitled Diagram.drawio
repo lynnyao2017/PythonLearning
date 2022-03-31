@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-31T14:04:28.510Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="mbeifOEPh5OnRjRvYA-V" version="17.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-31T14:15:06.402Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="DdzJIG-ZKj2ccE1xIJbX" version="17.2.5" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="782" dy="436" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -400,8 +400,8 @@
             <mxPoint x="200" y="120" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qHnehCnUd78I_HZsjJGI-31" value="metering_utility.get_rps_source_columns&amp;nbsp;&lt;br&gt;&lt;font color=&quot;#0000cc&quot;&gt;ucc_contract.rate_parameter_source_columns&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
-          <mxGeometry x="210" y="4670" width="310" height="30" as="geometry" />
+        <mxCell id="qHnehCnUd78I_HZsjJGI-31" value="metering_utility.get_scheduled_thresholds&amp;nbsp;&lt;br&gt;&lt;font color=&quot;#0000cc&quot;&gt;ucc_contract.product_threshold_specifications&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
+          <mxGeometry x="210" y="4760" width="310" height="30" as="geometry" />
         </mxCell>
         <mxCell id="qHnehCnUd78I_HZsjJGI-33" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#0000CC;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="qHnehCnUd78I_HZsjJGI-34">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -412,11 +412,44 @@
         <mxCell id="qHnehCnUd78I_HZsjJGI-34" value="metering_utility.get_rate_parameter_sets" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
           <mxGeometry x="210" y="4580" width="310" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="qHnehCnUd78I_HZsjJGI-35" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#0000CC;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="qHnehCnUd78I_HZsjJGI-34" target="qHnehCnUd78I_HZsjJGI-31">
+        <mxCell id="qHnehCnUd78I_HZsjJGI-35" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#0000CC;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qHnehCnUd78I_HZsjJGI-34" target="qHnehCnUd78I_HZsjJGI-36">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="290" y="4780" as="sourcePoint" />
             <mxPoint x="340" y="4730" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="qHnehCnUd78I_HZsjJGI-36" value="metering_utility.get_rps_source_columns&amp;nbsp;&lt;br&gt;&lt;font color=&quot;#0000cc&quot;&gt;ucc_contract.rate_parameter_source_columns&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
+          <mxGeometry x="210" y="4680" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHnehCnUd78I_HZsjJGI-37" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#0000CC;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qHnehCnUd78I_HZsjJGI-36" target="qHnehCnUd78I_HZsjJGI-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="4870" as="sourcePoint" />
+            <mxPoint x="340" y="4820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qHnehCnUd78I_HZsjJGI-38" value="metering_utility.get_rate_schedules&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
+          <mxGeometry x="210" y="4840" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHnehCnUd78I_HZsjJGI-39" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#0000CC;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qHnehCnUd78I_HZsjJGI-31" target="qHnehCnUd78I_HZsjJGI-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="4970" as="sourcePoint" />
+            <mxPoint x="300" y="4920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qHnehCnUd78I_HZsjJGI-40" value="&lt;div&gt;r&lt;font color=&quot;#00000f&quot;&gt;s.currency&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#00000f&quot;&gt;&lt;span&gt;	&lt;/span&gt;&amp;nbsp; from ucc_contract.product_agreement_schedules pas&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#00000f&quot;&gt;&lt;span&gt;	&lt;/span&gt;&amp;nbsp; join ucc_contract.rate_schedules rs&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontColor=#0000CC;" vertex="1" parent="1">
+          <mxGeometry x="550" y="4827.5" width="310" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="qHnehCnUd78I_HZsjJGI-41" value="metering_utility.get_rate_criteria" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
+          <mxGeometry x="210" y="4935" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHnehCnUd78I_HZsjJGI-42" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#00000F;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qHnehCnUd78I_HZsjJGI-38" target="qHnehCnUd78I_HZsjJGI-41">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="5080" as="sourcePoint" />
+            <mxPoint x="370" y="5030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qHnehCnUd78I_HZsjJGI-43" value="&lt;div&gt;rsc.rate_schedule_criteria_id,&lt;/div&gt;&lt;div&gt;&lt;span&gt;		&lt;/span&gt;&amp;nbsp; &amp;nbsp; rsc.rate_schedule_id,&amp;nbsp; -- the id that defines the set&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; rsc.feature_id,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; rsc.feature_value&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; from ucc_contract.rate_schedule_criteria rsc&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; join ucc_contract.rate_schedules rs&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontColor=#00000F;" vertex="1" parent="1">
+          <mxGeometry x="550" y="4930" width="460" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
