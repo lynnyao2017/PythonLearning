@@ -1,1 +1,68 @@
-<mxfile host="app.diagrams.net" modified="2022-04-01T05:50:36.358Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" version="17.3.0" etag="VNwwcPDop7b4uFtnwiy2" type="github"><diagram id="TEbVw5U2A5VvOaivECc1">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-04-01T16:14:24.219Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="0gHHqAPVaW5FNoYDb_Kr" version="17.3.0" type="github">
+  <diagram id="TEbVw5U2A5VvOaivECc1" name="Page-1">
+    <mxGraphModel dx="782" dy="436" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dV4yUE89Y7UTFNud8yjj-1" value="UCC Collection Files&lt;br&gt;(VCenter_XXXX.zip)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="60" y="140" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dV4yUE89Y7UTFNud8yjj-2" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="dV4yUE89Y7UTFNud8yjj-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="210" as="sourcePoint" />
+            <mxPoint x="340" y="175" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dV4yUE89Y7UTFNud8yjj-3" value="&lt;b&gt;Setup Collector&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dV4yUE89Y7UTFNud8yjj-2">
+          <mxGeometry x="-0.3897" y="2" relative="1" as="geometry">
+            <mxPoint x="10" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dV4yUE89Y7UTFNud8yjj-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dV4yUE89Y7UTFNud8yjj-5" target="dV4yUE89Y7UTFNud8yjj-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dV4yUE89Y7UTFNud8yjj-5" value="OPR P1 Process" style="swimlane;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="340" y="20" width="200" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="dV4yUE89Y7UTFNud8yjj-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="dV4yUE89Y7UTFNud8yjj-5" source="dV4yUE89Y7UTFNud8yjj-6" target="dV4yUE89Y7UTFNud8yjj-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dV4yUE89Y7UTFNud8yjj-6" value="1. Setup Contract" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="dV4yUE89Y7UTFNud8yjj-5">
+          <mxGeometry x="30" y="40" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dV4yUE89Y7UTFNud8yjj-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="dV4yUE89Y7UTFNud8yjj-5" source="dV4yUE89Y7UTFNud8yjj-13" target="dV4yUE89Y7UTFNud8yjj-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dV4yUE89Y7UTFNud8yjj-13" value="2. Setup Contract" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="dV4yUE89Y7UTFNud8yjj-5">
+          <mxGeometry x="30" y="80" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dV4yUE89Y7UTFNud8yjj-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="dV4yUE89Y7UTFNud8yjj-5" source="dV4yUE89Y7UTFNud8yjj-15" target="dV4yUE89Y7UTFNud8yjj-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dV4yUE89Y7UTFNud8yjj-15" value="3. Run&amp;nbsp;SPROCS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="dV4yUE89Y7UTFNud8yjj-5">
+          <mxGeometry x="35" y="120" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dV4yUE89Y7UTFNud8yjj-17" value="4. Run&amp;nbsp;Reports" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="dV4yUE89Y7UTFNud8yjj-5">
+          <mxGeometry x="35" y="170" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dV4yUE89Y7UTFNud8yjj-7" value="Contract file from Teneo&lt;br&gt;(ucc_contract_config_xxxxxx.zip)" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="30" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dV4yUE89Y7UTFNud8yjj-8" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dV4yUE89Y7UTFNud8yjj-7" target="dV4yUE89Y7UTFNud8yjj-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="300" as="sourcePoint" />
+            <mxPoint x="320" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dV4yUE89Y7UTFNud8yjj-9" value="Setup Contract" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1" vertex="1" connectable="0" parent="dV4yUE89Y7UTFNud8yjj-8">
+          <mxGeometry x="-0.5352" y="6" relative="1" as="geometry">
+            <mxPoint x="16" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dV4yUE89Y7UTFNud8yjj-19" value="rpt_avg_metrics, rpt_avg_daily_metrics, rpt_avg_hourly_metrics, &lt;br&gt;pre-invoice" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontStyle=1;startSize=23;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="590" y="80" width="180" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
