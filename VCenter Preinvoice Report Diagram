@@ -1,14 +1,77 @@
-<mxfile host="app.diagrams.net" modified="2022-04-02T14:31:10.787Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="qXM2VTbQt4hmQt9sMnrN" version="17.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-02T17:33:59.777Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="OKzEAMDzwHgOVr2XlaW9" version="17.3.0" type="github">
   <diagram id="p3raXml9qlwW9wQmed7t" name="Page-1">
-    <mxGraphModel dx="782" dy="379" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1632" dy="379" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="JTCh8VayDwcOx7TlHHJk-2" value="metering_utility.get_request_global_context" style="swimlane;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="265" y="370" width="300" height="200" as="geometry" />
-        </mxCell>
         <mxCell id="JTCh8VayDwcOx7TlHHJk-20" value="&lt;h1&gt;VCenter Pre-Invoice Report&lt;/h1&gt;&lt;pre&gt;metering_utility.get_request_global_context&lt;br&gt;metering_utility.register_consumption_metrics&lt;br&gt;metering_utility.load_consumption_metrics&lt;br&gt;metering_utility.get_active_client_agreements&lt;br&gt;metering_utility.standardize_cm_columns&lt;br&gt;metering_utility.append_cm_reserve_rows&lt;br&gt;metering_utility.load_metrics_cpa&lt;br&gt;metering_utility.get_rate_parameter_sets&lt;br&gt;metering_utility.get_rps_source_columns&lt;br&gt;metering_utility.get_scheduled_thresholds&lt;br&gt;metering_utility.get_rate_schedules&lt;br&gt;metering_utility.get_rate_criteria&lt;br&gt;metering_utility.load_rps_rc_candidates&lt;br&gt;metering_utility.load_cm_rps_rc_matches&lt;br&gt;metering_utility.update_cm_std_augment_columns&lt;br&gt;metering_utility.update_cm_commit_augment_columns&lt;br&gt;metering_utility.load_rpt_fod_preinvoice&lt;/pre&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=default;glass=1;shadow=1;sketch=1;" vertex="1" parent="1">
           <mxGeometry x="230" y="40" width="370" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-56" value="CALL metering_utility.job_requestor( &#39;Universal Invoice&#39;, 217631, 54013, NULL, &#39;ucc_vcenter.compute_combined_threshold&#39;)&lt;br&gt;p_request_job_id=54013&lt;br&gt;p_client_billing_period_id=16082" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;shadow=0;glass=1;sketch=0;fillColor=none;gradientColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="660" y="310" width="320" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-109" value="metering_utility.get_request_global_context" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=20;horizontalStack=0;rounded=0;shadow=0;glass=1;sketch=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="910" width="480" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-110" value="get_request_job_detail" style="swimlane;startSize=20;horizontal=0;rounded=0;shadow=0;glass=1;sketch=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-109">
+          <mxGeometry y="20" width="480" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-113" value="&lt;div style=&quot;font-size: 15px&quot;&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;v_request_id,&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px&quot;&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;v_job_id,&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px&quot;&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;&lt;span&gt;		&lt;/span&gt;v_parser_id,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px&quot;&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;&lt;span&gt;		&lt;/span&gt;v_status_id,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px&quot;&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;v_client_id,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px&quot;&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;v_billing_period&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-110">
+          <mxGeometry x="35" y="35" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-111" value="requests" style="swimlane;startSize=20;horizontal=0;rounded=0;shadow=0;glass=1;sketch=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-109">
+          <mxGeometry y="180" width="480" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-115" value="invoiceable_report_name" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-111">
+          <mxGeometry x="35" y="50" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-112" value="ucc_contract.clients" style="swimlane;startSize=20;horizontal=0;rounded=0;shadow=0;glass=1;sketch=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-109">
+          <mxGeometry y="300" width="480" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-122" value="metering_utility.get_request_global_context" style="swimlane;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="380" width="570" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-126" value="get_request_job_detail" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-122">
+          <mxGeometry x="40" y="40" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-127" value="p_request_id&#xa;v_job_id&#xa;v_parser_id,&#xa;v_status_id ..." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-126">
+          <mxGeometry y="30" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-130" value="requests" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-122">
+          <mxGeometry x="210" y="40" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-131" value="invoiceable_report_name" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-130">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-134" value="ucc_contract.clients" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-122">
+          <mxGeometry x="390" y="40" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-135" value="cl.client_type_id, &#xa;cl.client_name" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-134">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-136" value="event_types" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-122">
+          <mxGeometry x="210" y="130" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-137" value="event_type_name" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-136">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-138" value="system_settings" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-122">
+          <mxGeometry x="30" y="200" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-139" value="v_system_reserve_cap" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-138">
+          <mxGeometry y="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-140" value="setting_name = &#39;EnableReserveCap&#39;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-138">
+          <mxGeometry y="60" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-142" value="parsers" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-122">
+          <mxGeometry x="390" y="130" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-144" value="pr.parser_name" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-142">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-146" value="parser_name null?" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#f8cecc;opacity=50;strokeColor=#b85450;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-122">
+          <mxGeometry x="400" y="205" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
