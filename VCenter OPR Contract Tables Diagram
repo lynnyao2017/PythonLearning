@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-02T03:47:17.940Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="0xjSgGupwvR4JP2RIFss" version="17.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-02T05:22:38.657Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="qW5yuh9IbWKwmOr6mTXu" version="17.3.0" type="github">
   <diagram id="ooHWX3wGffKbJGfMZgq4" name="Page-1">
     <mxGraphModel dx="782" dy="379" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -109,7 +109,7 @@
             <mxPoint x="470" y="760" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="2018geAOeXXY2lby-HbT-35" value="vcenter_vsan_space" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="2018geAOeXXY2lby-HbT-35" value="vcenter_vsan_hosts" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="560" y="740" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="2018geAOeXXY2lby-HbT-36" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2018geAOeXXY2lby-HbT-30" target="2018geAOeXXY2lby-HbT-35">
