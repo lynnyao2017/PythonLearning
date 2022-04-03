@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-03T07:31:10.850Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="xbXDrBkKozmXkGAND3Ej" version="17.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-03T08:22:36.677Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="BgNLEkbov5pPPvzyqMAt" version="17.3.0" type="github">
   <diagram id="p3raXml9qlwW9wQmed7t" name="Page-1">
     <mxGraphModel dx="782" dy="379" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -95,6 +95,56 @@
         </mxCell>
         <mxCell id="JTCh8VayDwcOx7TlHHJk-172" value="CPA&lt;br&gt;client_product_agreements" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=none;gradientColor=#ffffff;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-162">
           <mxGeometry x="330" y="40" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-176" value="metering_utility.get_active_client_agreements" style="swimlane;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1300" width="570" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-177" value="ucc_contract.agreements" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-176">
+          <mxGeometry x="30" y="80" width="200" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-178" value="    ag.client_id,&#xa;    ag.agreement_id,&#xa;    	ag.std_short_name as schedule,&#xa;    	ag.effective_date,&#xa;    	ag.effective_period,&#xa;    	ag.contract_period_months,&#xa;    	ag.total_nominal_capacity,&#xa;    	ag.agreement_type,&#xa;    	ag.basis_type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-177">
+          <mxGeometry y="30" width="200" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-179" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="JTCh8VayDwcOx7TlHHJk-176" source="JTCh8VayDwcOx7TlHHJk-178" target="JTCh8VayDwcOx7TlHHJk-182">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="250" as="sourcePoint" />
+            <mxPoint x="300" y="205" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-180" value="&amp;nbsp; &amp;nbsp;Filter By" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="JTCh8VayDwcOx7TlHHJk-179">
+          <mxGeometry x="-0.3714" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-181" value="metering_utility.get_product_agreement_by_cbp" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-176">
+          <mxGeometry x="290" y="80" width="270" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-182" value="    ag.client_id,&#xa;    ag.agreement_id,&#xa;    	ag.std_short_name as schedule,&#xa;    	ag.effective_date,&#xa;    	ag.effective_period,&#xa;    	ag.contract_period_months,&#xa;    	ag.total_nominal_capacity,&#xa;    	ag.agreement_type,&#xa;    	ag.basis_type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-181">
+          <mxGeometry y="30" width="270" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-183" value="cbp &gt;=  asset_product_agreements.start_period&#xa;cbp &lt;= asset_product_agreements.end_period&#xa;agreements.effective_period &lt;= v_billing_period" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-181">
+          <mxGeometry y="170" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-184" value="CPA&lt;br&gt;client_product_agreements" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=none;gradientColor=#ffffff;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-176">
+          <mxGeometry x="330" y="40" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-185" value="metering_utility.standardize_cm_columns" style="swimlane;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1670" width="570" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-186" value="tmp_agreements" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-185">
+          <mxGeometry x="30" y="50" width="250" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-195" value="agreement_type" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=none;gradientColor=#ffffff;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-186">
+          <mxGeometry y="30" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-196" value="&lt;span&gt;WHEN agreement_type = &#39;FlexOnDemand&#39;&amp;nbsp; &amp;nbsp; or agreement_type = &#39;CommitBased&#39;&lt;/span&gt;&lt;br&gt;&lt;span&gt;THEN &#39;MeteringReportFodStandardInvoice&#39;&lt;/span&gt;&lt;br&gt;&lt;span&gt;WHEN agreement_type = &#39;ManagedServices&#39;&amp;nbsp;&amp;nbsp; &amp;nbsp;or agreement_type = &#39;DatacenterUtility&#39;&lt;/span&gt;&lt;br&gt;&lt;span&gt;THEN &#39;StandardInvoice&#39;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#d5e8d4;opacity=50;strokeColor=#82b366;align=left;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-186">
+          <mxGeometry y="70" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-197" value="tmp_consumption_metrics" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-185">
+          <mxGeometry x="290" y="90" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-198" value="add a couple of standard universal columns&#xa;add the contract-specific augment columns" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-197">
+          <mxGeometry y="30" width="260" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
