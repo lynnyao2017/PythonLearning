@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2022-04-02T17:50:41.861Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="TYM5sxGKc86kKo1rZgcb" version="17.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-03T06:30:36.046Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="ZGvqL3AwRaTjox9kYrQY" version="17.3.0" type="github">
   <diagram id="p3raXml9qlwW9wQmed7t" name="Page-1">
     <mxGraphModel dx="782" dy="379" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="JTCh8VayDwcOx7TlHHJk-20" value="&lt;h1&gt;VCenter Pre-Invoice Report&lt;/h1&gt;&lt;pre&gt;metering_utility.get_request_global_context&lt;br&gt;metering_utility.register_consumption_metrics&lt;br&gt;metering_utility.load_consumption_metrics&lt;br&gt;metering_utility.get_active_client_agreements&lt;br&gt;metering_utility.standardize_cm_columns&lt;br&gt;metering_utility.append_cm_reserve_rows&lt;br&gt;metering_utility.load_metrics_cpa&lt;br&gt;metering_utility.get_rate_parameter_sets&lt;br&gt;metering_utility.get_rps_source_columns&lt;br&gt;metering_utility.get_scheduled_thresholds&lt;br&gt;metering_utility.get_rate_schedules&lt;br&gt;metering_utility.get_rate_criteria&lt;br&gt;metering_utility.load_rps_rc_candidates&lt;br&gt;metering_utility.load_cm_rps_rc_matches&lt;br&gt;metering_utility.update_cm_std_augment_columns&lt;br&gt;metering_utility.update_cm_commit_augment_columns&lt;br&gt;metering_utility.load_rpt_fod_preinvoice&lt;/pre&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=default;glass=1;shadow=1;sketch=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="40" width="370" height="310" as="geometry" />
+          <mxGeometry x="150" y="30" width="370" height="310" as="geometry" />
         </mxCell>
         <mxCell id="JTCh8VayDwcOx7TlHHJk-56" value="CALL metering_utility.job_requestor( &#39;Universal Invoice&#39;, 217631, 54013, NULL, &#39;ucc_vcenter.compute_combined_threshold&#39;)&lt;br&gt;p_request_job_id=54013&lt;br&gt;p_client_billing_period_id=16082" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;shadow=0;glass=1;sketch=0;fillColor=none;gradientColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="660" y="310" width="320" height="110" as="geometry" />
@@ -61,7 +61,7 @@
         <mxCell id="JTCh8VayDwcOx7TlHHJk-148" value="tmp_consumption_metrics" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-147">
           <mxGeometry x="40" y="40" width="490" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="JTCh8VayDwcOx7TlHHJk-149" value="row_num, serial, dummy, processing_source, commit_row_num, &#xa;processing_source = &#39;Collection&#39; &#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-148">
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-149" value="row_num, serial, dummy, processing_source, commit_row_num, &#xa;processing_source = &#39;Collection&#39; &#xa;&#xa;* Copy from v_invoiceable_report table to tmp_consumption_metrics" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-148">
           <mxGeometry y="30" width="490" height="70" as="geometry" />
         </mxCell>
       </root>
