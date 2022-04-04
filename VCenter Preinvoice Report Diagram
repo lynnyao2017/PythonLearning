@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-04T07:05:37.697Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="4MUpyPTsmqQJfJJ8cPxG" version="17.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-04T07:20:28.535Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="fpPhNqiNC2UUr8O2q1gt" version="17.3.0" type="github">
   <diagram id="p3raXml9qlwW9wQmed7t" name="Page-1">
     <mxGraphModel dx="782" dy="345" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -429,16 +429,28 @@
           <mxGeometry y="200" width="300" height="90" as="geometry" />
         </mxCell>
         <mxCell id="JTCh8VayDwcOx7TlHHJk-308" value="metering_utility.update_cm_std_augment_columns" style="swimlane;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="200" y="4500" width="410" height="340" as="geometry" />
+          <mxGeometry x="90" y="4510" width="700" height="340" as="geometry" />
         </mxCell>
         <mxCell id="JTCh8VayDwcOx7TlHHJk-309" value="tmp_consumption_metrics" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-308">
-          <mxGeometry x="90" y="40" width="270" height="220" as="geometry" />
+          <mxGeometry x="55" y="40" width="270" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="JTCh8VayDwcOx7TlHHJk-310" value="   agreement_id     = cpa.agreement_id,&#xa;		   currency         = rs.currency,&#xa;		   schedule         = ag.schedule,&#xa;		   billable_metric  = ud.billable_metric" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-309">
-          <mxGeometry y="30" width="270" height="90" as="geometry" />
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-310" value="   agreement_id     = cpa.agreement_id,&#xa;		   currency         = rs.currency,&#xa;		   schedule         = ag.schedule,&#xa;		   billable_metric  = ud.billable_metric&#xa;   rate_schedule_id&#xa;   rate_amount      = metering_utility.get_rate" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-309">
+          <mxGeometry y="30" width="270" height="110" as="geometry" />
         </mxCell>
         <mxCell id="JTCh8VayDwcOx7TlHHJk-316" value="tmp_cm_rps_rc_matches rrm&#xa;tmp_cpa cpa&#xa;tmp_rate_schedules rs&#xa;tmp_agreements ag&#xa;tmp_rps rps&#xa;metering_utility.standard_capacity_metrics scm&#xa;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-309">
-          <mxGeometry y="120" width="270" height="100" as="geometry" />
+          <mxGeometry y="140" width="270" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-317" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;entryX=-0.012;entryY=0.431;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="JTCh8VayDwcOx7TlHHJk-308" target="JTCh8VayDwcOx7TlHHJk-319">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="325" y="164" as="sourcePoint" />
+            <mxPoint x="445" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-318" value="metering_utility.get_rate" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-308">
+          <mxGeometry x="395" y="100" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-319" value="RETURN latest rate_amount &#xa;FROM ucc_contract.rates, rate_schedules, &#xa;            client_billing_periods&#xa;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-318">
+          <mxGeometry y="30" width="250" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
