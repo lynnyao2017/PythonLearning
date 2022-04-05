@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-04T07:28:03.982Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="ni4osB0WY2kjj3Y1ebUk" version="17.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-05T05:43:17.804Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="24uK1IDfVeSd3o2ZFw5i" version="17.3.0" type="github">
   <diagram id="p3raXml9qlwW9wQmed7t" name="Page-1">
     <mxGraphModel dx="782" dy="345" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -240,7 +240,7 @@
         <mxCell id="JTCh8VayDwcOx7TlHHJk-229" value="   rps.db_object_name as report_name&#xa;	  , parp.product_agreement_id&#xa;	  , rps.resource_category_id&#xa;	  , rpsc.rate_parameter_set_id&#xa;  , rpsc.rate_parameter_source_column_id&#xa;	  , rpsc.feature_id&#xa;	  , rpsc.feature_value_column" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-228">
           <mxGeometry y="30" width="280" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="JTCh8VayDwcOx7TlHHJk-233" value="feature: resource_category, resource_type, asset" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-228">
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-233" value="feature: resource_category, resource_type, asset&#xa;             resource_name" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-228">
           <mxGeometry y="150" width="280" height="30" as="geometry" />
         </mxCell>
         <mxCell id="JTCh8VayDwcOx7TlHHJk-230" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;entryX=0.007;entryY=0.271;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="JTCh8VayDwcOx7TlHHJk-225" target="JTCh8VayDwcOx7TlHHJk-227" source="JTCh8VayDwcOx7TlHHJk-229">
@@ -451,6 +451,33 @@
         </mxCell>
         <mxCell id="JTCh8VayDwcOx7TlHHJk-319" value="RETURN latest rate_amount &#xa;FROM ucc_contract.rates, rate_schedules, &#xa;            client_billing_periods&#xa;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-318">
           <mxGeometry y="30" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-321" value="metering_utility.update_cm_commit_augment_columns" style="swimlane;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="90" y="4930" width="700" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-322" value="tmp_consumption_metrics" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-321">
+          <mxGeometry x="55" y="40" width="270" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-323" value="  threshold_percent&#xa;  = metering_utility.get_threshold" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-322">
+          <mxGeometry y="30" width="270" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-324" value="tmp_cm_rps_rc_matches rrm&#xa;tmp_cpa cpa&#xa;tmp_rate_schedules rs&#xa;tmp_agreements ag&#xa;tmp_rps rps&#xa;metering_utility.standard_capacity_metrics scm&#xa;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-322">
+          <mxGeometry y="210" width="270" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-325" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;entryX=-0.012;entryY=0.431;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="JTCh8VayDwcOx7TlHHJk-321" target="JTCh8VayDwcOx7TlHHJk-327">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="325" y="164" as="sourcePoint" />
+            <mxPoint x="445" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-326" value="metering_utility.get_threshold" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-321">
+          <mxGeometry x="395" y="100" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-327" value="RETURN latest rate_amount &#xa;FROM ucc_contract.rates, rate_schedules, &#xa;            client_billing_periods&#xa;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;opacity=50;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-326">
+          <mxGeometry y="30" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JTCh8VayDwcOx7TlHHJk-329" value="system_reserve_cap=85" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=1;sketch=0;fontSize=12;fillColor=#f8cecc;opacity=50;strokeColor=#b85450;" vertex="1" parent="JTCh8VayDwcOx7TlHHJk-321">
+          <mxGeometry x="340" y="30" width="180" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
